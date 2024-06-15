@@ -1,3 +1,6 @@
-#!/usr/bin/env bash
-ARGS=( "$@" )
-lilypond $ARGS
+#!/usr/bin/env sh
+
+set -e -x
+
+cd "$@"
+make

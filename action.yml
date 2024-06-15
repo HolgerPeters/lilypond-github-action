@@ -1,10 +1,10 @@
 name: Lilypond Generator
-description: Run Lilypond tool with the given set of arguments to generate music sheets
-author: '@alexandre-touret'
+description: Run make in a context where lilypond is available
+author: '@holgerpeters'
 
 inputs:
-  args:
-    description: Arguments for Lilyponid
+  path:
+    description: path in which make is to be executed
     required: true
     default: -h
 
@@ -12,7 +12,7 @@ runs:
   using: docker
   image: Dockerfile
   args:
-  - ${{ inputs.args }}
+  - ${{ inputs.path }}
 
 branding:
   icon: underline

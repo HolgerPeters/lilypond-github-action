@@ -6,7 +6,7 @@ inputs:
   path:
     description: path in which make is to be executed
     required: true
-    default: -h
+    default: .
 
 runs:
   using: docker

@@ -15,5 +15,5 @@ jobs:
           env:
             GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           run: docker login -u ${GITHUB_ACTOR} -p ${GITHUB_TOKEN} docker.pkg.github.com
-        - name: Publish the Docker image 
+        - name: Publish the Docker image
           run: docker push docker.pkg.github.com/${GITHUB_REPOSITORY}/lilypond:latest

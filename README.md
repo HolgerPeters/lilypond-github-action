@@ -9,7 +9,7 @@ It creates and run a Docker container which execute Lilypond.
 It could be useful if you want to store your Lilypond source files in Git and publish them automatically into a web site.
 
 ## Prerequisites
-Learn git, lilypond and [github pages](https://pages.github.com/)  :) 
+Learn git, lilypond and [github pages](https://pages.github.com/)  :)
 
 You also have to create two secrets corresponding to your git username and email.
 * ``GIT_USERNAME``
@@ -31,7 +31,7 @@ jobs:
     env:
         LILYPOND_FILES: "*.ly"
     steps:
-      - name: Checkout Source 
+      - name: Checkout Source
         uses: actions/checkout@v1
       - name: Get changed files
         id: getfile
@@ -72,5 +72,4 @@ It's the gitlab pages root folder.
 
 ## Need more informations ?
 
-You can check the gh-pages branch of [this running example](https://github.com/alexandre-touret/piano-sheets-as-code). 
-
+You can check the gh-pages branch of [this running example](https://github.com/alexandre-touret/piano-sheets-as-code).

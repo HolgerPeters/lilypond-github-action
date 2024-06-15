@@ -11,8 +11,8 @@ inputs:
 runs:
   using: docker
   #  image: Dockerfile
-  image: 'docker://ghcr.io/holgerpeters/lilypond-github-action:latest'
-
+  # image: 'docker://ghcr.io/holgerpeters/lilypond-github-action:latest'
+  image: 'docker://ghcr.io/holgerpeters/lilypond-github-action:sha256-00c3c27cd2987919f5e1910103bc7eac34808911e5c43e93c21f9da04cda7905.sig'
   args:
   - ${{ inputs.path }}
 

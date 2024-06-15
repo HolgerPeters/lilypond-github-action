@@ -5,7 +5,7 @@ FROM debian:latest
 RUN mkdir -p /usr/share/man/man1
 
 RUN apt-get -qy update && \
-    DEBIAN_FRONTEND=noninteractive apt-get -yq install lilypond git && \
+    DEBIAN_FRONTEND=noninteractive apt-get -yq install lilypond git make texlive-base && \
     rm -rf /var/lib/apt/lists/*
 
 COPY entrypoint.sh /entrypoint.sh

@@ -10,7 +10,9 @@ inputs:
 
 runs:
   using: docker
-  image: Dockerfile
+  #  image: Dockerfile
+  image: 'docker://ghcr.io/holgerpeters/lilypond-github-action:latest'
+
   args:
   - ${{ inputs.path }}
 

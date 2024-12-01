@@ -4,8 +4,10 @@ FROM debian:latest
 # https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=863199
 RUN mkdir -p /usr/share/man/man1
 
+ENV DEBIAN_FRONTEND=noninteractive
+
 RUN apt-get -qy update && \
-    DEBIAN_FRONTEND=noninteractive apt-get -yq install lilypond git make texlive-base m4 && \
+    apt-get -yq install lilypond git make texlive-base m4 && \
     rm -rf /var/lib/apt/lists/*
 
 COPY entrypoint.sh /entrypoint.sh

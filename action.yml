@@ -12,7 +12,7 @@ runs:
   using: docker
   #  image: Dockerfile
   # image: 'docker://ghcr.io/holgerpeters/lilypond-github-action:latest'
-  image: 'docker://ghcr.io/holgerpeters/lilypond-github-action:main'
+  image: docker://ghcr.io/holgerpeters/lilypond-github-action:main
   args:
   - ${{ inputs.path }}
 

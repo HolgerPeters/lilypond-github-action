@@ -1,4 +1,4 @@
-![Build](https://github.com/HolgerPeters/lilypond-github-action/workflows/Build/badge.svg)
+[![Docker](https://github.com/HolgerPeters/lilypond-github-action/actions/workflows/docker-publish.yml/badge.svg)](https://github.com/HolgerPeters/lilypond-github-action/actions/workflows/docker-publish.yml) [![pre-commit](https://github.com/HolgerPeters/lilypond-github-action/actions/workflows/pre-commit.yml/badge.svg)](https://github.com/HolgerPeters/lilypond-github-action/actions/workflows/pre-commit.yml)
 
 # lilypond-github-action
 
